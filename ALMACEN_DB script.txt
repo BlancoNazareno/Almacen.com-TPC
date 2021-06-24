@@ -29,7 +29,7 @@ ID varchar(10) not null primary key,
 Nombre_Apellido varchar(100) not null,
 DNI varchar(10) null Check (not DNI like '%[^0-9]%'),
 Telefono varchar(20) null check (not Telefono like '%[^0-9]%'),
-Nivel_Permiso int not null,
+Nivel_Permiso tinyint not null,
 )
 
 create table CLIENTE(

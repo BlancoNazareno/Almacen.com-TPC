@@ -27,7 +27,7 @@ ID varchar(10) not null primary key,
 Nombre_Apellido varchar(100) not null,
 DNI varchar(10) null Check (not DNI like '%[^0-9]%'),
 Telefono varchar(20) null check (not Telefono like '%[^0-9]%'),
-Nivel_Permiso int not null,
+Nivel_Permiso tinyint not null,
 )
 
 create table CLIENTE(
@@ -39,7 +39,7 @@ Telefono varchar(20) null check (not Telefono like '%[^0-9]%'),
 
 create table STOCK(
 ID_Producto varchar(10) not null primary key foreign key references PRODUCTO(ID),
-Stock int not null check (Stock >= 0),
+Cantidad_Stock int not null check (Cantidad_Stock >= 0),
 )
 
 create table MOVIMIENTO_MERCADERIA(
