@@ -18,7 +18,7 @@ Descripcion varchar(50) not null,
 ID_Marca varchar(10) not null foreign key references MARCA(ID),
 ID_Proveedor varchar(10) not null foreign key references PROVEEDOR(ID),
 Precio_Compra money not null check (Precio_Compra > 0),
-Precio_Venta money not null check (Precio_Venta > 0),
+Precio_Venta money not null check (Precio_Venta > 0  and  Precio_Venta > Precio_Compra),
 Stock_Minimo int not null check (Stock_Minimo >= 0),
 )
 
