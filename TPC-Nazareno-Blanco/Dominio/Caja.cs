@@ -10,7 +10,7 @@ namespace Dominio
     class Caja
     {
         public int ID { get; set; }
-        public SqlMoney Monto_Facturado { get; set; }
-        public SqlMoney Monto_Ganancia { get; set; }
+        public SqlMoney MontoFacturado { get; set; }
+        public SqlMoney MontoGanancia { get; set; }
     }
 }

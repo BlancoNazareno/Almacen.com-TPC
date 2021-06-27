@@ -130,6 +130,19 @@
             "rid": "win"
           }
         }
+      },
+      "Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "System.Data.SqlClient": "4.8.2"
+        },
+        "compile": {
+          "bin/placeholder/Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dominio.dll": {}
+        }
       }
     }
   },
@@ -446,10 +459,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Dominio/1.0.0": {
+      "type": "project",
+      "path": "../Dominio/Dominio.csproj",
+      "msbuildProject": "../Dominio/Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Dominio >= 1.0.0",
       "System.Data.SqlClient >= 4.8.2"
     ]
   },
@@ -459,11 +478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nazab\\Desktop\\UTN\\Programación III\\Progra2021\\Repos_GitHub\\TPC\\TPC-Nazareno-Blanco\\Dominio\\Dominio.csproj",
-      "projectName": "Dominio",
-      "projectPath": "C:\\Users\\nazab\\Desktop\\UTN\\Programación III\\Progra2021\\Repos_GitHub\\TPC\\TPC-Nazareno-Blanco\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\nazab\\Desktop\\UTN\\Programación III\\Progra2021\\Repos_GitHub\\TPC\\TPC-Nazareno-Blanco\\Negocio\\Negocio.csproj",
+      "projectName": "Negocio",
+      "projectPath": "C:\\Users\\nazab\\Desktop\\UTN\\Programación III\\Progra2021\\Repos_GitHub\\TPC\\TPC-Nazareno-Blanco\\Negocio\\Negocio.csproj",
       "packagesPath": "C:\\Users\\nazab\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nazab\\Desktop\\UTN\\Programación III\\Progra2021\\Repos_GitHub\\TPC\\TPC-Nazareno-Blanco\\Dominio\\obj\\",
+      "outputPath": "C:\\Users\\nazab\\Desktop\\UTN\\Programación III\\Progra2021\\Repos_GitHub\\TPC\\TPC-Nazareno-Blanco\\Negocio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nazab\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -479,7 +498,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\nazab\\Desktop\\UTN\\Programación III\\Progra2021\\Repos_GitHub\\TPC\\TPC-Nazareno-Blanco\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\nazab\\Desktop\\UTN\\Programación III\\Progra2021\\Repos_GitHub\\TPC\\TPC-Nazareno-Blanco\\Dominio\\Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

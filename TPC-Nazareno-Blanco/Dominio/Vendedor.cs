@@ -10,9 +10,9 @@ namespace Dominio
     class Vendedor
     {
         public string ID { get; set; }
-        public string Nombre_Apellido { get; set; }
+        public string NombreApellido { get; set; }
         public string DNI { get; set; }
         public string Telefono { get; set; }
-        public SqlInt16 Nivel_Permiso { get; set; }
+        public SqlInt16 NivelPermiso { get; set; }
     }
 }

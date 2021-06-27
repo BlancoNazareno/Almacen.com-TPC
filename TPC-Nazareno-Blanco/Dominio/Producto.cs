@@ -7,17 +7,15 @@ using System.Data.SqlTypes;
 
 namespace Dominio
 {
-    class Producto
+    public class Producto
     {
         public string ID { get; set; }
         public string Descripcion { get; set; }
-        public string ID_Marca { get; set; }
-        public string Descripcion_Marca { get; set; }
-        public string ID_Proveedor { get; set; }
-        public string Descripcion_Proveedor { get; set; }
-        public SqlMoney Precio_Compra { get; set; }
-        public SqlMoney Precio_venta { get; set; }
-        public int Stock_Minimo { get; set; }
+        public Marca Marca { get; set; }
+        public Proveedor Proveedor { get; set; }
+        public SqlMoney PrecioCompra { get; set; }
+        public SqlMoney PrecioVenta { get; set; }
+        public int StockMinimo { get; set; }
 
     }
 }

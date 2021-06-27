@@ -10,17 +10,14 @@ namespace Dominio
     class Venta
     {
         public int ID { get; set; }
-        public string ID_Vendedor { get; set; }
-        public string Descripcion_Vendedor { get; set; }
-        public string ID_Cliente { get; set; }
-
-        public string Descripcion_Cliente { get; set; }
-        public string ID_Producto { get; set; }
-        public int Cantidad_Producto { get; set; }
-        public SqlMoney Monto_Facturado { get; set; }
-        public SqlMoney Monto_Ganancia { get; set; }
+        public Vendedor Vendedor { get; set; }
+        public Cliente Cliente { get; set; }
+        public Producto Producto { get; set; }
+        public Stock Stock { get; set; }
+        public SqlMoney MontoFacturado { get; set; }
+        public SqlMoney MontoGanancia { get; set; }
         public SqlDateTime Fecha { get; set; }
         public string Observacion { get; set; }
-        public bool Sentido_Movimiento { get; set; }
+        public bool SentidoMovimiento { get; set; }
     }
 }

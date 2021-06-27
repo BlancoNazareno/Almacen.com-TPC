@@ -7,15 +7,14 @@ using System.Data.SqlTypes;
 
 namespace Dominio
 {
-    class Movimiento_Mercaderia
+    class MovimientoMercaderia
     {
         public int ID { get; set; }
-        public string ID_Vendedor { get; set; }
-        public string Descripcion_Vendedor { get; set; }
-        public string ID_Producto { get; set; }
-        public int Cantidad_Producto { get; set; }
+        public Vendedor Vendedor { get; set; }
+        public Producto Producto { get; set; }
+        public Stock Stock { get; set; }
         public SqlDateTime Fecha { get; set; }
         public string Observacion { get; set; }
-        public bool Sentido_Movimiento { get; set; }
+        public bool SentidoMovimiento { get; set; }
     }
 }
