@@ -8,13 +8,13 @@ using Dominio;
 
 namespace Negocio
 {
-    class MarcaNegocio
+    class ProveedorNegocio
     {
-        public List<Marca> Listar()
+        public List<Proveedor> Listar()
         {
             AccesoDatos datos = new AccesoDatos();
-            List <Marca> lista = new List<Marca>();
-            datos.setearQuery("Select ID, Descripcion from MARCA");
+            List<Proveedor> lista = new List<Proveedor>();
+            datos.setearQuery("Select ID, Descripcion from PROVEEDOR");
 
             try
             {
@@ -24,9 +24,8 @@ namespace Negocio
                 while (datos.lector.Read())
                 {
 
-
-                    Marca aux;
-                    aux = new Marca();
+                    Proveedor aux;
+                    aux = new Proveedor();
                     aux.ID = (string)datos.lector["ID"];
                     aux.Descripcion = (string)datos.lector["Descripcion"];
 
@@ -47,18 +46,18 @@ namespace Negocio
 
         }
 
-        public void Agregar(Marca nuevo)
+        public void Agregar(Proveedor nuevo)
         {
 
             try
             {
                 AccesoDatos datos = new AccesoDatos();
 
-                datos.setearQuery("Insert into MARCA(ID, Descripcion) values (@ID, @Descripcion)"); 
+                datos.setearQuery("Insert into PROVEEDOR(ID, Descripcion) values (@ID, @Descripcion)");
 
                 datos.agregarParametro("@ID", nuevo.ID);
                 datos.agregarParametro("@Descripcion", nuevo.Descripcion);
-                
+
                 datos.ejecutarAccion();
 
             }
@@ -69,16 +68,16 @@ namespace Negocio
 
         }
 
-        public void Modificar(Marca marca)
+        public void Modificar(Proveedor proveedor)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearQuery("Update MARCA set Descripcion = @Descripcion");
+                datos.setearQuery("Update PROVEEDOR set Descripcion = @Descripcion");
 
 
-                datos.agregarParametro("@ID", marca.ID);
-                datos.agregarParametro("@Descripcion", marca.Descripcion);
+                datos.agregarParametro("@ID", proveedor.ID);
+                datos.agregarParametro("@Descripcion", proveedor.Descripcion);
 
                 datos.ejecutarAccion();
             }
@@ -89,14 +88,14 @@ namespace Negocio
             }
         }
 
-        public void Eliminar(Marca marca)
+        public void Eliminar(Proveedor proveedor)
         {
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearQuery("Delete MARCA where ID = @ID");
-               
-                datos.agregarParametro("@ID", marca.ID);
+                datos.setearQuery("Delete PROVEEDOR where ID = @ID");
+
+                datos.agregarParametro("@ID", proveedor.ID);
 
                 datos.ejecutarAccion();
             }
@@ -106,5 +105,7 @@ namespace Negocio
                 throw ex;
             }
         }
+    }
+}
     }
 }

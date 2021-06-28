@@ -13,7 +13,7 @@ namespace Negocio
     {
         public List<Producto> Listar()
         {
-            AccesoDatos datos = new AccesoDatos();// aca adentro hay magia, estan lector, conexion y comando
+            AccesoDatos datos = new AccesoDatos();
             List<Producto> lista = new List<Producto>();
             datos.setearQuery("Select P.ID, P.Descripcion, M.ID as IDMarca, M.Descripcion as Marca, Prov.ID as IDProveedor, Prov.Descripcion as Proveedor, P.Precio_Compra, P.Precio_Venta, P.Stock_Minimo" +
             "from PRODUCTO as P" +
