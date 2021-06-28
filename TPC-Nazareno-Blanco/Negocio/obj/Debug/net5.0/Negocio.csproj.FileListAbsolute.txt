@@ -3,3 +3,4 @@ C:\Users\nazab\Desktop\UTN\Programación III\Progra2021\Repos_GitHub\TPC\TPC-Naz
 C:\Users\nazab\Desktop\UTN\Programación III\Progra2021\Repos_GitHub\TPC\TPC-Nazareno-Blanco\Negocio\obj\Debug\net5.0\Negocio.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nazab\Desktop\UTN\Programación III\Progra2021\Repos_GitHub\TPC\TPC-Nazareno-Blanco\Negocio\obj\Debug\net5.0\Negocio.AssemblyInfoInputs.cache
 C:\Users\nazab\Desktop\UTN\Programación III\Progra2021\Repos_GitHub\TPC\TPC-Nazareno-Blanco\Negocio\obj\Debug\net5.0\Negocio.AssemblyInfo.cs
+C:\Users\nazab\Desktop\UTN\Programación III\Progra2021\Repos_GitHub\TPC\TPC-Nazareno-Blanco\Negocio\obj\Debug\net5.0\Negocio.csproj.CoreCompileInputs.cache
