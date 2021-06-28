@@ -70,7 +70,7 @@ namespace Negocio
             {
                 AccesoDatos datos = new AccesoDatos();
 
-                datos.setearQuery("Insert into PRODUCTO(ID, Descripcion, ID_Marca, ID_Proveedor, Precio_Compra, Precio_Venta, Stock_Minimo) values (@ID, @Descripcion, @IDMarca, @IDProveedor, @PrecioCompra, @PrecioVenta, @StockMinimo)"); //LO CAMBIE 19/01 
+                datos.setearQuery("Insert into PRODUCTO(ID, Descripcion, ID_Marca, ID_Proveedor, Precio_Compra, Precio_Venta, Stock_Minimo) values (@ID, @Descripcion, @IDMarca, @IDProveedor, @PrecioCompra, @PrecioVenta, @StockMinimo)"); 
                                                                
                 datos.agregarParametro("@ID", nuevo.ID);
                 datos.agregarParametro("@Descripcion", nuevo.Descripcion);
@@ -122,9 +122,7 @@ namespace Negocio
             {
                 datos.setearQuery("Delete PRODUCTO where ID = @ID");
 
-                // esto no entendiendo porque va???
                 datos.agregarParametro("@ID", producto.ID);
-
 
                 datos.ejecutarAccion();
             }
